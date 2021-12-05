@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-    <head>
-		{%block head %}
-        <title>Adam Ramza</title>
-		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
 
-	</head>
-    <body>
-        <p class="text1"> <h2> Adam Ramza</h2> </p>
-		<img src="{{url_for('static', filename='grafika_31.jpg')}}" height="240" width="320">
-	  <hr>
-		{%endblock%}
+    <title>{% block title %} Adam Ramza {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-	<p>więcej o mnie:
-	<a href ="info">kliknij tutaj</a>
-	</p></hr>
-	<div id="content">{% block content %}{% endblock %}</div>
-	</body>
+</head>
+<body>
+<p class="text1">
+<h2> Adam Ramza</h2> </p>
+<img src="{{url_for('static', filename='grafika_31.jpg')}}" height="240" width="320">
+<hr>
+
+
+<p>więcej o mnie:
+    <a href="info">kliknij tutaj</a>
+</p></hr>
+<div id="content">{% block content %}{% endblock %}</div>
+</body>
 
 
 </html>

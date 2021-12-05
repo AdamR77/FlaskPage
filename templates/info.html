@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<head>
-   {% extends "base.html" %}
-    {%block content%}
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}info{% endblock %}
+{% block content %}
 <p class="text1"> coś o mnie: </p>
 	<p class="text2"> <h2> zainteresowania: </h2></p>
 	  <ul>
@@ -22,6 +17,6 @@
 	  Wyślij
 	</button>
 	</form>
-    </body>
-	{%endblock%}
-</html>
+	<a href="base"> powrót do strony głównej - kliknij tutaj</a>
+  {% endblock %}
+
