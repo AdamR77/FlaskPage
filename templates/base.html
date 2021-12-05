@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <head>
+		{%block head %}
+        <title>Adam Ramza</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+	</head>
+    <body>
+        <p class="text1"> <h2> Adam Ramza</h2> </p>
+		<img src="{{url_for('static', filename='grafika_31.jpg')}}" height="240" width="320">
+	  <hr>
+		{%endblock%}
+
+	<p>więcej o mnie:
+	<a href ="info">kliknij tutaj</a>
+	</p></hr>
+	<div id="content">{% block content %}{% endblock %}</div>
+	</body>
+
+
+</html>
